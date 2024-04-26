@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={ <EnrollCard/>} />
+          <Route path="/react-payments/dist" element={ <EnrollCard/>} />
           <Route path="/CardRegistrationConfirmation" element={<CardRegistrationConfirmation />}>
           </Route>
         </Routes>
