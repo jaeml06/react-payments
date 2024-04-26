@@ -77,11 +77,12 @@ Unable to find an `+(n===!1?"accessible ":"")+'element with the role "'+t+'"'+l+
   args: {
     ...Template.args,
     view: true,
-    // Simulate dropdown being open by default
     selected: '카드사를 선택해주세요'
   },
   play: async ({
     canvasElement
+  }: {
+    canvasElement: HTMLElement;
   }) => {
     const canvas = within(canvasElement);
     await userEvent.click(canvas.getByText('카드사를 선택해주세요'));
@@ -93,9 +94,11 @@ Unable to find an `+(n===!1?"accessible ":"")+'element with the role "'+t+'"'+l+
   },
   play: async ({
     canvasElement
+  }: {
+    canvasElement: HTMLElement;
   }) => {
     const canvas = within(canvasElement);
     await userEvent.click(canvas.getByText('카드사를 선택해주세요'));
-    await userEvent.click(canvas.getByText('BC카드')); // Simulating item selection
+    await userEvent.click(canvas.getByText('BC카드'));
   }
 }`,...(bd=(yd=Dr.parameters)==null?void 0:yd.docs)==null?void 0:bd.source}}};const uN=["Default","DropdownClicked","ItemSelected"];export{Nr as Default,kr as DropdownClicked,Dr as ItemSelected,uN as __namedExportsOrder,sN as default};
